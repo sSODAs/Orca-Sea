@@ -7,7 +7,13 @@ CMakeUserPresets.json
 # Local export tools and results
 /scripts/
 /output/
-/preview/
+/preview/*
+
+# Published README diagnostic animations
+!/preview/orca-topdown-debug-light.gif
+!/preview/orca-topdown-debug-dark.gif
+!/preview/orca-mesh-skeleton-light.gif
+!/preview/orca-mesh-skeleton-dark.gif
 
 # Python environment
 /.venv/

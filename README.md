@@ -6,7 +6,7 @@
   <img alt="Orca Sea — Real-time procedural ASCII animation" src="https://raw.githubusercontent.com/sSODAs/sSODAs/main/assets/orca-light.gif" width="100%">
 </picture>
 
-a real-time procedural animation project that simulates a pod of swimming orcas using C++ and modern OpenGL, transforming a dynamic 3D scene into ASCII art through custom GLSL shaders.
+**Orca Sea** is a real-time procedural animation project that simulates a pod of swimming orcas using C++ and modern OpenGL, transforming a dynamic 3D scene into ASCII art through custom GLSL shaders.
 
 The project explores procedural geometry, skeletal animation, autonomous movement, and non-photorealistic rendering, combining computer graphics with creative programming to bring a small living ocean into a GitHub profile.
 
@@ -24,6 +24,28 @@ Rather than animating predefined sprites or using imported 3D models, Orca Sea g
 - Converts the rendered 3D scene into ASCII art using GLSL.
 - Generates ambient water particles and wake trails.
 - Supports multiple camera views, light and dark themes, and real-time parameter adjustment.
+
+### Simulation Debug Views
+
+**Top-down View - Swimming Paths & Skeletons**
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./preview/orca-topdown-debug-dark.gif">
+  <source media="(prefers-color-scheme: light)" srcset="./preview/orca-topdown-debug-light.gif">
+  <img alt="Top-down view showing the skeletal rigs, travelled paths, and planned paths" src="./preview/orca-topdown-debug-light.gif" width="100%">
+</picture>
+
+The green lines show travelled paths, while the yellow lines show planned paths. The skeletal overlays visualize body articulation as the orcas follow their trajectories.
+
+**Mesh Inspection - Skeletal Animation**
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./preview/orca-mesh-skeleton-dark.gif">
+  <source media="(prefers-color-scheme: light)" srcset="./preview/orca-mesh-skeleton-light.gif">
+  <img alt="Close-up inspection of the nine-joint skeletal rig and swimming deformation" src="./preview/orca-mesh-skeleton-light.gif" width="100%">
+</picture>
+
+A close-up view of the nine-joint rig demonstrates body bending and vertical tail oscillation during swimming.
 
 ## How It Works
 
@@ -117,6 +139,7 @@ Orca-Sea/
 │   ├── rendering/      # ASCII rendering and frame capture
 │   ├── ui/             # Live parameter panel
 │   └── main.cpp        # Application entry point
+├── preview/         # Diagnostic GIFs for the README
 ├── CMakeLists.txt
 ├── CMakePresets.json
 ├── vcpkg.json
@@ -129,6 +152,6 @@ Orca-Sea/
 - Predictive separation reduces potential visual overlap but does not implement full mesh-based collision detection.
 - Orca geometry and movement are stylized rather than anatomically exact.
 - The provided build configuration targets Windows.
-- Generated animations and local export utilities are not included in this repository.
+- Selected diagnostic GIFs are included in `preview/`. Local export utilities and other generated outputs are excluded.
 
 The animated preview was generated from the procedural simulation and is also displayed on my [GitHub profile](https://github.com/sSODAs).
