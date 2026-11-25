@@ -1,9 +1,9 @@
 # Orca Sea
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sSODAs/sSODAs/main/assets/orca-dark.gif">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sSODAs/sSODAs/main/assets/orca-light.gif">
-  <img alt="Orca Sea — Real-time procedural ASCII animation" src="https://raw.githubusercontent.com/sSODAs/sSODAs/main/assets/orca-light.gif" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./preview/orca-dark.gif">
+  <source media="(prefers-color-scheme: light)" srcset="./preview/orca-light.gif">
+  <img src="./preview/orca-light.gif" width="100%" alt="Orca Sea">
 </picture>
 
 A real-time procedural animation project that simulates a pod of swimming orcas using C++ and modern OpenGL, transforming a dynamic 3D scene into ASCII art through custom GLSL shaders.
@@ -32,7 +32,7 @@ Rather than animating predefined sprites or using imported 3D models, Orca Sea g
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./preview/orca-topdown-debug-dark.gif">
   <source media="(prefers-color-scheme: light)" srcset="./preview/orca-topdown-debug-light.gif">
-  <img alt="Top-down view showing the skeletal rigs, travelled paths, and planned paths" src="./preview/orca-topdown-debug-light.gif" width="100%">
+  <img src="./preview/orca-topdown-debug-light.gif" width="100%" alt="Orca Sea">
 </picture>
 
 The green lines show travelled paths, while the yellow lines show planned paths. The skeletal overlays visualize body articulation as the orcas follow their trajectories.
@@ -42,7 +42,7 @@ The green lines show travelled paths, while the yellow lines show planned paths.
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./preview/orca-mesh-skeleton-dark.gif">
   <source media="(prefers-color-scheme: light)" srcset="./preview/orca-mesh-skeleton-light.gif">
-  <img alt="Close-up inspection of the nine-joint skeletal rig and swimming deformation" src="./preview/orca-mesh-skeleton-light.gif" width="100%">
+  <img src="./preview/orca-mesh-skeleton-light.gif" width="100%" alt="Orca Sea">
 </picture>
 
 A close-up view of the nine-joint rig demonstrates body bending and vertical tail oscillation during swimming.
