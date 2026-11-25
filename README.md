@@ -6,7 +6,7 @@
   <img alt="Orca Sea — Real-time procedural ASCII animation" src="https://raw.githubusercontent.com/sSODAs/sSODAs/main/assets/orca-light.gif" width="100%">
 </picture>
 
-**Orca Sea** is a real-time procedural animation project that simulates a pod of swimming orcas using C++ and modern OpenGL, transforming a dynamic 3D scene into ASCII art through custom GLSL shaders.
+A real-time procedural animation project that simulates a pod of swimming orcas using C++ and modern OpenGL, transforming a dynamic 3D scene into ASCII art through custom GLSL shaders.
 
 The project explores procedural geometry, skeletal animation, autonomous movement, and non-photorealistic rendering, combining computer graphics with creative programming to bring a small living ocean into a GitHub profile.
 
@@ -27,7 +27,7 @@ Rather than animating predefined sprites or using imported 3D models, Orca Sea g
 
 ### Simulation Debug Views
 
-**Top-down View - Swimming Paths & Skeletons**
+**Top-down View with Swimming Paths & Skeletons**
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./preview/orca-topdown-debug-dark.gif">
@@ -37,7 +37,7 @@ Rather than animating predefined sprites or using imported 3D models, Orca Sea g
 
 The green lines show travelled paths, while the yellow lines show planned paths. The skeletal overlays visualize body articulation as the orcas follow their trajectories.
 
-**Mesh Inspection - Skeletal Animation**
+**Mesh Inspection with Skeletal animation**
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./preview/orca-mesh-skeleton-dark.gif">
@@ -49,36 +49,30 @@ A close-up view of the nine-joint rig demonstrates body bending and vertical tai
 
 ## How It Works
 
-### 1. Procedural Geometry
+**1. Procedural Geometry**
 
 Each orca is constructed from a series of interpolated cross-sections that define the body, dorsal fin, pectoral fins, and tail flukes.
-
 The characteristic black-and-white markings are generated procedurally through fragment shaders, without requiring external textures or imported models.
 
-### 2. Skeletal Animation
+**2. Skeletal Animation**
 
 The swimming motion is driven by a nine-joint skeletal system.
-
 Forward kinematics and GPU skinning deform the body, while procedural oscillation generates vertical tail movement. Joint rotation constraints help maintain a natural body shape during turns.
 
-### 3. Autonomous Movement
+**3. Autonomous Movement**
 
 Each orca follows a continuous, procedurally generated swimming path.
-
 The skeletal system samples the previously travelled path to determine body curvature, allowing the body and tail to follow the direction of movement naturally rather than rotating as a single rigid object.
 
-### 4. Pod Simulation
+**4. Pod Simulation**
 
 Five autonomous agents swim within a shared environment.
-
 Each agent has its own size, swimming speed, depth, and opacity. A predictive separation algorithm evaluates potential overlaps along upcoming paths and adjusts swimming speeds to reduce visual interference between agents.
 
-### 5. ASCII Rendering
+**5. ASCII Rendering**
 
 The animated 3D scene is first rendered into an off-screen framebuffer.
-
 A custom GLSL rendering pass divides the image into cells and evaluates surface coverage, luminance, material information, and depth-related opacity to generate ASCII glyphs.
-
 Procedural water particles, wake trails, and ambient glyphs are combined with the final result to create the appearance of a moving ocean.
 
 ## Technologies Used
