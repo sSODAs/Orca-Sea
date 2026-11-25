@@ -6,7 +6,7 @@
   <img alt="Orca Sea — Real-time procedural ASCII animation" src="https://raw.githubusercontent.com/sSODAs/sSODAs/main/assets/orca-light.gif" width="100%">
 </picture>
 
-**Orca Sea** is a real-time procedural animation project that simulates a pod of swimming orcas using C++ and modern OpenGL, transforming a dynamic 3D scene into ASCII art through custom GLSL shaders.
+a real-time procedural animation project that simulates a pod of swimming orcas using C++ and modern OpenGL, transforming a dynamic 3D scene into ASCII art through custom GLSL shaders.
 
 The project explores procedural geometry, skeletal animation, autonomous movement, and non-photorealistic rendering, combining computer graphics with creative programming to bring a small living ocean into a GitHub profile.
 
