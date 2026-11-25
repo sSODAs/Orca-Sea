@@ -1,0 +1,32 @@
+# Build artifacts
+/build/
+/build-*/
+/out/
+CMakeUserPresets.json
+
+# Local export tools and results
+/scripts/
+/output/
+/preview/
+
+# Python environment
+/.venv/
+/venv/
+__pycache__/
+*.pyc
+
+# Local IDE settings
+/.vscode/
+/.vs/
+
+# Temporary files
+*.log
+*.rgba
+*.tmp
+
+# Local export workflow
+/.github/workflows/render-orcas.yml
+
+# Operating system
+.DS_Store
+Thumbs.db
