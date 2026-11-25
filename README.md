@@ -107,35 +107,6 @@ cmake --build --preset release
 ```powershell
 .\build\Release\OrcaSea.exe
 ```
-
-## Controls
-
-| Key | Action |
-|---|---|
-| 1 | Perspective view |
-| 2 | Top-down view |
-| 3 | Capture view |
-| 4 | Mesh inspection |
-| 5 | Side inspection |
-| 7 | Switch light / dark theme |
-| Tab | Toggle live parameter panel |
-| Arrow keys | Select and adjust parameters |
-| F | Reset parameters while the panel is open |
-| H | Toggle ambient ASCII background |
-| J | Toggle water particles |
-| K | Toggle predictive separation |
-| B | Toggle skeleton visualization |
-| P | Toggle swimming path visualization |
-| W | Toggle wireframe |
-| G | Toggle reference grid |
-| M | Toggle autonomous movement |
-| T | Toggle rest pose |
-| N | Generate a new random seed |
-| E | Save current parameter settings |
-| Space | Pause / resume |
-| R | Reset simulation |
-| Esc | Exit |
-
 ## Project Structure
 
 ```text
